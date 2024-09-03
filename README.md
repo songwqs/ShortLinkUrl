@@ -1,4 +1,4 @@
-# 原项目：<[https://x007.in/](https://github.com/ellermister/shorturl)>
+# 原项目：<[ellermister/shorturl/](https://github.com/ellermister/shorturl)>
 # 由于作者好像不跟新了 我就不foke了 自己单开一个分支追加功能
 
 # 🔗PHP轻量短链接
