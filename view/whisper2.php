@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="container-fluid" style="margin-top: 40px;">
-    <a  href="<?php echo $url; ?>" class="btn btn-primary btn-lg" role="button">See details</a>
+    <a  href="<?php echo $url; ?>" style="display: table; margin: 0 auto;" class="btn btn-primary btn-lg" role="button">See Details >></a>
     <div id="editormd-view">
         <textarea style="display:none;" name="editormd-markdown-doc"></textarea>
     </div>
@@ -33,12 +33,11 @@
 <script src="https://testingcf.jsdelivr.net/npm/editor.md@1.5.0/lib/prettify.min.js"></script>
 <script src="https://testingcf.jsdelivr.net/npm/editor.md@1.5.0/lib/flowchart.min.js"></script>
 <script src="https://testingcf.jsdelivr.net/npm/editor.md@1.5.0/editormd.min.js"></script>
-
 <script>
-
 function showMarkdown(whisper) {
+    const markdownContent = decodeBase64(whisper);
     let editormdView = editormd.markdownToHTML("editormd-view", {
-        markdown: whisper,
+        markdown: markdownContent,
         //htmlDecode      : true,       // 开启 HTML 标签解析，为了安全性，默认不开启
         htmlDecode: "style,script,iframe",  // you can filter tags decode
         //toc             : false,
@@ -51,8 +50,10 @@ function showMarkdown(whisper) {
         taskList: true
     });
 }
-
-showMarkdown(window.atob("<?php echo base64_encode($whisper); ?>"));
+function decodeBase64(base64String) {
+    return new TextDecoder('utf-8').decode(Uint8Array.from(atob(base64String), c => c.charCodeAt(0)));
+}
+showMarkdown("<?php echo base64_encode($whisper); ?>");
 
 </script>
 </body>
