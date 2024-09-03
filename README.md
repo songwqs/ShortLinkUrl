@@ -1,5 +1,5 @@
 # 原项目：<[ellermister/shorturl/](https://github.com/ellermister/shorturl)>
-# 由于作者好像不跟新了 我就不foke了 自己单开一个分支追加功能
+# 由于作者好像不更新了 我就不Fork了，自己单开一个项目追加功能
 
 # 🔗PHP轻量短链接
 
