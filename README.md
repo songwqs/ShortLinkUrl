@@ -109,5 +109,5 @@ post :  longUrl  Base64 编码
 longUrl: aHR0cHM6Ly93d3cubmFpdW4yMzU4NzI5OC5jZmQvIy9yZWdpc3Rlcj9jb2RlPU1qWmhrV3pp
 ```
 ```json
-{"Code": 1, "ShortUrl": "http://u.songw.top/s/xxxxx"}
+{"Code": 1, "ShortUrl": "https://u.songw.top/s/xxxxx"}
 ```
