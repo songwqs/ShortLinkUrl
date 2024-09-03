@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>短链URL</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/editor.md@1.5.0/css/editormd.min.css"/>
+    <link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://testingcf.jsdelivr.net/npm/editor.md@1.5.0/css/editormd.min.css"/>
     <style type="text/css">
         .hidden {
             display: none;
@@ -179,11 +179,11 @@
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/editor.md@1.5.0/editormd.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="https://testingcf.jsdelivr.net/npm/editor.md@1.5.0/editormd.min.js"></script>
 <script type="text/html" id="tpl-alert">
     <div class="alert alert-{{status}} alert-dismissible fade show" role="alert">
         <strong>{{status}}!</strong> {{message}}
@@ -264,7 +264,7 @@
             editor = editormd("editor", {
                 // width: "630px",
                 height: 630,
-                path: "https://cdn.jsdelivr.net/npm/editor.md@1.5.0/lib/"  // Autoload modules mode, codemirror, marked... dependents libs path
+                path: "https://testingcf.jsdelivr.net/npm/editor.md@1.5.0/lib/"  // Autoload modules mode, codemirror, marked... dependents libs path
             });
         }
 
