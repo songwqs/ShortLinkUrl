@@ -33,7 +33,7 @@ PHP轻量短链接是一个简单而强大的工具，用于生成短链接，�
 
 ### Docker 部署
 
-运行命令之后访问 80 端口即可, 容器内部采用 php-fpm 与 nginx 并行提供服务。
+运行命令之后访问 8080 端口即可, 容器内部采用 php-fpm 与 nginx 并行提供服务。
 
 ```bash
 docker run -d -p 8080:80 songwqs1/shourturl:latest
